@@ -24,6 +24,11 @@ def ask_rock_paper_scissors() -> chr:
 
 
 def main() -> None:
+	if ask_yes_no("Do you want to play first to 10? "):
+		first_to_ten = True
+	else:
+		first_to_ten = False
+
 	player_points: int = 0
 	computer_points: int = 0
 	while True:
@@ -61,12 +66,24 @@ def main() -> None:
 			print("Tie!")
 
 		print()
-		if not ask_yes_no("Do you want to continue playing? "):
-			break
+		if first_to_ten:
+			print(f"You have {player_points} points.")
+			print(f"The computer has {computer_points} points.")
+
+			if player_points >= 10:
+				print("You won!")
+				break
+			elif computer_points >= 10:
+				print("You loose!")
+				break
+		else:
+			if not ask_yes_no("Do you want to continue playing? "):
+				break
 		print()
 
-	print(f"You got {player_points} points.")
-	print(f"The computer got {computer_points} points.")
+	if not first_to_ten:
+		print(f"You got {player_points} points.")
+		print(f"The computer got {computer_points} points.")
 
 if __name__ == "__main__":
 	main()
