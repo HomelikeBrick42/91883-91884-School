@@ -17,6 +17,13 @@
 			"request": "launch",
 			"program": "${workspaceFolder}/Projects/Rock-Paper-Scissors/main.py",
 			"console": "externalTerminal"
+		},
+		{
+			"name": "High-Low",
+			"type": "python",
+			"request": "launch",
+			"program": "${workspaceFolder}/Projects/High-Low/main.py",
+			"console": "externalTerminal"
 		}
 	]
 }
