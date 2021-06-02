@@ -55,7 +55,7 @@ def main() -> None:
 			best_guess = guess
 
 		guesses += 1
-		if guesses >= 7:
+		if guesses >= 9:
 			print("You are out of guesses")
 			print(f"The secret was {secret}")
 			print(f"Your best guess was {best_guess}")
