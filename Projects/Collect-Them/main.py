@@ -12,7 +12,7 @@ def ask_for_int(question: str) -> int:
 			print("Please enter a valid integer")
 
 def has_all_letters(tokens: list[chr], word: str) -> bool:
-    return Counter(word) & Counter(tokens) == Counter(word)
+	return Counter(word) & Counter(tokens) == Counter(word)
 
 def main() -> None:
 	count: int = ask_for_int("How many times do you want to get the averge for? ")
