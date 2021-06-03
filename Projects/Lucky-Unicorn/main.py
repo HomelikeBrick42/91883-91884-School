@@ -34,11 +34,11 @@ def main() -> None:
 
 		index = random.choices([0, 1, 2, 3], weights=weights, k=1)[0]
 		print(f"You got {tokens[index]}")
-		print(f"You won ${amount[index]}")
+		print(f"You won ${amount[index]:.2f}")
 		money += amount[index]
 
 		money -= 1.0
-		print(f"You have ${money} dollars left\n")
+		print(f"You have ${money:.2f} dollars left\n")
 		rounds += 1
 		
 		if ask_yes_no("Do you want to quit? "):
