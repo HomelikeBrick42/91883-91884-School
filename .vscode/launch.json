@@ -31,6 +31,13 @@
 			"request": "launch",
 			"program": "${workspaceFolder}/Projects/Collect-Them/main.py",
 			"console": "externalTerminal"
+		},
+		{
+			"name": "Car-Racer",
+			"type": "python",
+			"request": "launch",
+			"program": "${workspaceFolder}/Projects/Car-Racer/main.py",
+			"console": "externalTerminal"
 		}
 	]
 }
