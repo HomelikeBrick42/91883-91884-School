@@ -3,7 +3,9 @@ import os
 import random
 random.seed = os.urandom(1)[0]
 
-def ask_for_int(question: str, min: int = None, max: int = None) -> int:
+from typing import Union
+
+def ask_for_int(question: str, min: Union[int, None] = None, max: Union[int, None] = None) -> int:
 	while True:
 		answer: str = input(question).strip().lower()
 		try:
